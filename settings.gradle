@@ -1,2 +1,3 @@
 rootProject.name='interview-demo'
 include ':app'
+include ':domain'
