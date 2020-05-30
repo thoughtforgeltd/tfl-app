@@ -1,4 +1,4 @@
-package com.gelanees.domain
+package com.gelanees.domain.model
 
 data class Mode(
     val isTflService: Boolean,
