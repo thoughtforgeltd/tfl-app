@@ -4,7 +4,7 @@ import com.gelanees.data.factory.ModeJsonFactory
 import com.gelanees.data.model.ModeJson
 import com.gelanees.data.model.map
 import com.gelanees.data.service.JourneyPlannerService
-import com.gelanees.domain.model.GetAvailablePlannerModesResult
+import com.gelanees.domain.model.GetJourneyModesEntity
 import com.gelanees.domain.repository.IJourneyRepository
 import io.mockk.every
 import io.mockk.mockk
@@ -35,7 +35,7 @@ class JourneyRepositoryTest {
         every { journeyPlannerService.getAvailablePlannerModes() } returns getAvailablePlannerModesResponse
 
         val expected =
-            GetAvailablePlannerModesResult.Success(modes = listOfModeJson.map { it.map() })
+            GetJourneyModesEntity.Success(modes = listOfModeJson.map { it.map() })
         val actual = journeyRepository.getAvailablePlannerModes()
         Assert.assertEquals(expected, actual)
     }
