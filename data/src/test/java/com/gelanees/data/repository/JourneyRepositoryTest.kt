@@ -6,6 +6,7 @@ import com.gelanees.data.model.map
 import com.gelanees.data.service.JourneyPlannerService
 import com.gelanees.domain.model.GetJourneyModesEntity
 import com.gelanees.domain.repository.IJourneyRepository
+import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -32,7 +33,7 @@ class JourneyRepositoryTest {
         every { getAvailablePlannerModesResponse.isSuccessful } returns true
         every { getAvailablePlannerModesResponse.code() } returns 200
         every { getAvailablePlannerModesResponse.body() } returns listOfModeJson
-        every { journeyPlannerService.getAvailablePlannerModes() } returns getAvailablePlannerModesResponse
+        coEvery { journeyPlannerService.getAvailablePlannerModes() } returns getAvailablePlannerModesResponse
 
         val expected =
             GetJourneyModesEntity.Success(modes = listOfModeJson.map { it.map() })
