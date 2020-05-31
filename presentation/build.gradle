@@ -26,11 +26,16 @@ android {
 
 dependencies {
     implementation project(":domain")
+    implementation project(":data")
     implementation project(":design")
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "io.uniflow:uniflow-core:$uniflow_version"
     implementation "io.uniflow:uniflow-androidx:$uniflow_version"
+
+    implementation "org.koin:koin-core:$koin_version"
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+    implementation "org.koin:koin-android:$koin_version"
 
     testImplementation "junit:junit:$junit_version"
     testImplementation "org.koin:koin-test:$koin_version"
