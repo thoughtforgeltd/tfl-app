@@ -33,4 +33,9 @@ dependencies {
     implementation "io.uniflow:uniflow-androidx:$uniflow_version"
 
     testImplementation "junit:junit:$junit_version"
+    testImplementation "org.koin:koin-test:$koin_version"
+    testImplementation "io.mockk:mockk:$mockk_version"
+    testImplementation "io.uniflow:uniflow-androidx-test:$uniflow_version"
+    testImplementation "io.uniflow:uniflow-test:$uniflow_version"
+    testImplementation "androidx.arch.core:core-testing:$androidx_test_version"
 }
