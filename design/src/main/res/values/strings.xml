@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TFL App</string>
+
+    <!--Journey Modes Messages-->
+
+    <!-- Common Messages -->
+    <string name="error_unknown">Something bad happened, Please try again later!</string>
+    <string name="error_no_internet">No internet connection</string>
+
+</resources>
