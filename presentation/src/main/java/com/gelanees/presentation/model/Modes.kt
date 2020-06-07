@@ -33,8 +33,4 @@ enum class Modes(val id: String, val desc : String, val icon: Int){
        TRAM("tram","Tram", R.drawable.ic_tram_24),
        TUBE("tube","Tube", R.drawable.ic_underground_24),
        WALKING("walking","Walking", R.drawable.ic_walk_24);
-
-    fun getMode(id: String) : Modes {
-        return Modes.valueOf(id)
-    }
 }
