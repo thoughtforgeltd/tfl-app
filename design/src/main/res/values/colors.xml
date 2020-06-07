@@ -3,4 +3,51 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <!-- Corporate Colors from http://content.tfl.gov.uk/tfl-colour-standards-issue04.pdf-->
+    <color name="corporate_blue">#0019a8</color> <!-- 0, 25, 168 -->
+    <color name="corporate_dark_gery">#414b56</color> <!-- 65, 75, 86 -->
+    <color name="corporate_black">#000000</color> <!-- 0, 0, 0 -->
+    <color name="corporate_red">#dc251f</color> <!-- 220, 36, 31 -->
+    <color name="corporate_yellow">#ffce00</color> <!-- 255, 206, 0 -->
+    <color name="corporate_white">#ffffff</color> <!-- 255, 255, 255 -->
+    <color name="corporate_grey">#868f98</color> <!--134, 143, 152 -->
+    <color name="corporate_green">#00722a</color> <!-- 0, 114, 41 -->
+
+    <!-- Mode specific Colors from http://content.tfl.gov.uk/tfl-colour-standards-issue04.pdf-->
+    <color name="mode_transport_for_london">@color/corporate_blue</color>
+    <color name="mode_emirates_air_lines">@color/corporate_red</color>
+    <color name="mode_london_buses">@color/corporate_red</color>
+    <color name="mode_london_coaches">#f1ad00</color> <!-- 241, 171, 0 -->
+    <color name="mode_elizabeth_line">#9364cc</color> <!-- 147, 100, 204 -->
+    <color name="mode_santander_cycle">@color/corporate_red</color>
+    <color name="mode_london_dial_a_ride">#b727bf</color> <!-- 183, 39, 191 -->
+    <color name="mode_docklands_light_railway">#00afad</color> <!-- 0, 175, 173 -->
+    <color name="mode_london_overground">#ef7c10</color> <!-- 239, 123, 16 -->
+    <color name="mode_london_river_services">#00a0e2</color> <!-- 0, 160, 226 -->
+    <color name="mode_taxi_and_private_hire">#8480d7</color> <!-- 132, 128, 215 -->
+    <color name="mode_tfl_rail">@color/corporate_blue</color>
+    <color name="mode_london_trams">#00bd19</color> <!-- 0, 189, 25 -->
+    <color name="mode_london_underground">@color/corporate_blue</color>
+    <color name="mode_visitor_centre">#dc006b</color> <!-- 220, 0, 107 -->
+
+    <!-- Safety Colors from http://content.tfl.gov.uk/tfl-colour-standards-issue04.pdf-->
+    <color name="safety_blue">#0060a8</color> <!-- 0, 96, 168 -->
+    <color name="safety_yellow">@color/corporate_yellow</color>
+    <color name="safety_red">@color/corporate_red</color>
+    <color name="safety_green">@color/corporate_green</color>
+
+    <!-- London Underground Line Colors from http://content.tfl.gov.uk/tfl-colour-standards-issue04.pdf-->
+    <color name="underground_bakerloo">#b26300</color> <!-- 178, 99, 0 -->
+    <color name="underground_central">@color/corporate_red</color>
+    <color name="underground_circle">#ffd429</color> <!-- 255, 211, 41 -->
+    <color name="underground_district">#007d32</color> <!-- 0, 125, 50 -->
+    <color name="underground_hammersmith_and_city">#f4a9be</color> <!-- 244, 169, 190 -->
+    <color name="underground_jubilee">#a1a5a7</color> <!-- 161, 165, 167 -->
+    <color name="underground_metropolitan">#9b0058</color> <!-- 155, 0, 88 -->
+    <color name="underground_northern">@color/corporate_black</color>
+    <color name="underground_piccadilly">@color/corporate_blue</color>
+    <color name="underground_victoria">#0097d8</color> <!-- 0, 152, 216 -->
+    <color name="underground_waterloo_and_city">#93ceba</color> <!-- 147, 206, 186 -->
+
 </resources>
