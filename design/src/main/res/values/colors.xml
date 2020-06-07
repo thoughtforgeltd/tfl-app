@@ -4,13 +4,30 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
+    <!-- Primary Colors from http://content.tfl.gov.uk/design-style-guide.pdf-->
+    <color name="primary_blue">#1A5A92</color> <!-- 26, 90, 146 -->
+    <color name="primary_dark_grey">#2D3039</color> <!-- 45, 48, 57 -->
+    <color name="primary_turquoise">#66CCCC</color> <!-- 102, 204, 204 -->
+    <color name="primary_White">#FFFFFF</color> <!-- 255, 255, 255 -->
+    <color name="primary_tfl_blue">#113B92</color> <!-- 17, 59, 146 -->
+
+    <!-- Accent Colors from http://content.tfl.gov.uk/design-style-guide.pdf-->
+    <color name="accent_light_grey_1">#F7F7F7</color> <!-- 247, 247, 247 -->
+    <color name="accent_light_grey_2">#EEEEEE</color> <!-- 238, 238, 238 -->
+    <color name="accent_mid_grey">#CCCCCC</color> <!-- 204, 204, 204 -->
+    <color name="accent_light_blue">#EFF6FD</color> <!-- 239, 246, 253 -->
+    <color name="accent_mid_blue">#CCDDE8</color> <!-- 204, 221, 232 -->
+    <color name="accent_green">#E7f6DC</color> <!-- 231, 246, 220 -->
+    <color name="accent_warning_yellow">#FAF5E1</color> <!-- 250, 245, 225 -->
+    <color name="accent_error_red">#FFEFEF</color> <!-- 255, 239, 239 -->
+
     <!-- Corporate Colors from http://content.tfl.gov.uk/tfl-colour-standards-issue04.pdf-->
     <color name="corporate_blue">#0019a8</color> <!-- 0, 25, 168 -->
     <color name="corporate_dark_gery">#414b56</color> <!-- 65, 75, 86 -->
     <color name="corporate_black">#000000</color> <!-- 0, 0, 0 -->
-    <color name="corporate_red">#dc251f</color> <!-- 220, 36, 31 -->
+    <color name="corporate_red">#CC3333</color> <!-- 220, 36, 31 -->
     <color name="corporate_yellow">#ffce00</color> <!-- 255, 206, 0 -->
-    <color name="corporate_white">#ffffff</color> <!-- 255, 255, 255 -->
+    <color name="corporate_white">@color/primary_White</color>
     <color name="corporate_grey">#868f98</color> <!--134, 143, 152 -->
     <color name="corporate_green">#00722a</color> <!-- 0, 114, 41 -->
 
