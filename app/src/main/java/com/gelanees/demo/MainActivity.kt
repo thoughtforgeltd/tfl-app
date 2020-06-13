@@ -3,6 +3,8 @@ package com.gelanees.demo
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
+import com.gelanees.demo.adapter.JourneyModesAdapter
 import com.gelanees.presentation.JourneyModesViewModel
 import com.gelanees.presentation.states.GetJourneyModesState
 import io.uniflow.androidx.flow.onStates
@@ -34,6 +36,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun showLoadedState(loadedState: GetJourneyModesState.LoadedState) {
         loading.hide()
+        list_modes.isVisible = true
+        list_modes.adapter = JourneyModesAdapter(loadedState.modes)
     }
 
     private fun showLoadingState() {
