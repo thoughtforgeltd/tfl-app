@@ -1,5 +1,7 @@
 package com.gelanees.data.utils
 
+import android.content.Context
+import com.chuckerteam.chucker.api.ChuckerInterceptor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -19,6 +21,8 @@ inline fun <reified T> createRetrofitService(retrofit: Retrofit): T {
     return retrofit.create(T::class.java)
 }
 
-fun createOkHttpClient(): OkHttpClient {
-    return OkHttpClient.Builder().build()
+fun createOkHttpClient(context : Context): OkHttpClient {
+    return OkHttpClient.Builder()
+        .addInterceptor(ChuckerInterceptor(context))
+        .build()
 }
