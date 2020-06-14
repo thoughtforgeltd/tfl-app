@@ -9,9 +9,9 @@ data class ModeView(
 )
 
 fun Mode.map(): ModeView {
-    val mode = Modes.values().first { it.id == this.modeName }
+    val mode = Modes.values().firstOrNull() { it.id == this.modeName }
     return ModeView(
-        description = mode.desc,
-        icon =  mode.icon
+        description = mode?.desc ?: Modes.UNKNOWN.desc,
+        icon =  mode?.icon ?: Modes.UNKNOWN.icon
     )
 }

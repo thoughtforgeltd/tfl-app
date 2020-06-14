@@ -32,5 +32,6 @@ enum class Modes(val id: String, val desc : String, val icon: Int){
        TFL_RAIL("tflrail","TFL Rail", R.drawable.ic_internation_rail_24),
        TRAM("tram","Tram", R.drawable.ic_tram_24),
        TUBE("tube","Tube", R.drawable.ic_underground_24),
-       WALKING("walking","Walking", R.drawable.ic_walk_24);
+       WALKING("walking","Walking", R.drawable.ic_walk_24),
+       UNKNOWN("unknown","unknown", R.drawable.ic_walk_24);
 }
