@@ -1,6 +1,7 @@
 package com.gelanees.factory
 
 import com.gelanees.domain.model.Mode
+import com.gelanees.presentation.model.Modes
 
 object ModeFactory {
     fun makeModeList(size: Int = 3) : List<Mode>{
@@ -15,7 +16,7 @@ object ModeFactory {
 
     private fun makeMode(it: Int): Mode {
         return Mode(
-            modeName = "modeName$it"
+            modeName = Modes.values()[it].id
         )
     }
 }
