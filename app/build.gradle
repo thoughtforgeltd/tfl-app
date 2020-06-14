@@ -3,13 +3,13 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion compile_sdk_version
+    buildToolsVersion build_tools_version
 
     defaultConfig {
         applicationId "com.gelanees.demo"
-        minSdkVersion 21
-        targetSdkVersion 29
+        minSdkVersion min_sdk_version
+        targetSdkVersion target_sdk_version
         versionCode 1
         versionName "1.0"
 
@@ -23,12 +23,35 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
+    implementation project(":design")
+    implementation project(":domain")
+    implementation project(":data")
+    implementation project(":presentation")
+
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation "androidx.appcompat:appcompat:$app_compact_version"
+    implementation "androidx.appcompat:appcompat:$androidx_version"
     implementation "androidx.core:core-ktx:$android_ktx_version"
+    implementation "androidx.recyclerview:recyclerview:$androidx_version"
     implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+    implementation "androidx.activity:activity-ktx:$androidx_version"
+    implementation "androidx.cardview:cardview:$cardview_version"
+
+    implementation "org.koin:koin-core:$koin_version"
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+    implementation "org.koin:koin-android:$koin_version"
+
+    implementation "io.uniflow:uniflow-core:$uniflow_version"
+    implementation "io.uniflow:uniflow-androidx:$uniflow_version"
+
     testImplementation "junit:junit:$junit_version"
 }

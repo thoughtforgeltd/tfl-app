@@ -1,3 +1,6 @@
+include ':design'
+include ':presentation'
+include ':data'
 rootProject.name='interview-demo'
 include ':app'
 include ':domain'
